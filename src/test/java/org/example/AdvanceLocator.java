@@ -1,7 +1,11 @@
 package org.example;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.testng.annotations.Test;
+
+import java.util.List;
 
 public class AdvanceLocator extends BrowserSetup {
     @Test
@@ -59,6 +63,25 @@ public class AdvanceLocator extends BrowserSetup {
         System.out.println(text);
         text = browser.findElement(By.cssSelector("table[name=\"courses\"] > tbody>tr>th:last-child")).getText();
         System.out.println(text);
+
+        text = browser.findElement(By.xpath("//th[text()='Course'] /preceding-sibling::th")).getText();
+        System.out.println(text);
+        text = browser.findElement(By.xpath("//th[contains(text(),'Instructor')] /following-sibling::th[last()]")).getText();
+        System.out.println(text);
+        List<WebElement> tableData = browser.findElements(By.xpath("//table[@name='courses'] //td"));
+        System.out.println(tableData.size());
+        for (WebElement e : tableData) {
+            System.out.println(e.getText());
+
+        }
+
+
+
+
+
+
+
+
 
     }
 
