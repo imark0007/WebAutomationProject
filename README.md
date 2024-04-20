@@ -37,6 +37,8 @@ This project is a web automation framework built using Selenium WebDriver and Ja
 1. Configure the test data, environment settings, and browser configurations in the config.properties file.
 2. Write test cases using the Page Object Model pattern in the src/test/java/tests directory.
 3. Execute the tests using TestNG or your preferred IDE.
+
+## I personally used IntelliJ IDEA 2023.3.6
    
 ### Contributing
 
