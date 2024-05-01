@@ -7,12 +7,16 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeSuite;
 
+import java.time.Duration;
+
 public class BrowserSetup {
 
     public WebDriver browser;
     @BeforeSuite
     public void startBrowser(){
+
         browser = new ChromeDriver();
+//        browser.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
     }
 
     @AfterSuite
