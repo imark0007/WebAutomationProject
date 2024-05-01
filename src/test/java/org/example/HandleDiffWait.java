@@ -2,6 +2,7 @@ package org.example;
 
 import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedCondition;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
@@ -26,8 +27,8 @@ public class HandleDiffWait extends BrowserSetup{
 
         browser.get("https://qavbox.github.io/demo/delay/");
         clickOnElement(By.name("commit1"));
-//      wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//h2[@id='delay']")));
-        browser.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
+        WebElement element =  wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//h2[@id='delay']")));
+        browser.manage().timeouts().implicitlyWait(Duration.ofSeconds(4));
         Assert.assertTrue(getElement(By.xpath("//h2[@id='delay']")).isDisplayed());
 
 
