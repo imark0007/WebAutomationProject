@@ -1,4 +1,4 @@
-# Web Automation Project Tutorial
+# Web Automation Tutorial
 
 ## Overview
 
