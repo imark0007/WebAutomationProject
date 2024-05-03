@@ -36,6 +36,7 @@ public class BrowserSetup {
     }
 
     public Boolean displayStatus(By locator){
+
         return getElement(locator).isDisplayed();
     }
 

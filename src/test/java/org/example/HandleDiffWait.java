@@ -33,16 +33,4 @@ public class HandleDiffWait extends BrowserSetup{
 
 
     }
-
-
-
-
-
-
-
-
-
-
-
-
 }
