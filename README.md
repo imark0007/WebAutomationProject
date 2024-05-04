@@ -2,7 +2,7 @@
 
 ## Overview
 
-This project is a web automation framework built using Selenium WebDriver and Java. It provides a foundation for automating web applications, allowing for efficient and reliable testing of web functionalities.
+This tutorial is a web automation framework built using Selenium WebDriver and Java. It provides a foundation for automating web applications, allowing for efficient and reliable testing of web functionalities.
 
 ## Features
 
