@@ -16,7 +16,7 @@ public class BrowserSetup {
     public void startBrowser(){
 
         browser = new ChromeDriver();
-//        browser.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
+//      browser.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
     }
 
     @AfterSuite
